@@ -1,47 +1,44 @@
-#alltext{font-family: 'Times New Roman', Times, serif;
-    font-size: 14;
-    margin-left: 40%;
-    margin-right: 40%;
-    width: max-content;}
-#headliner {font-family: 'Times New Roman', Times, serif;
-    font-size: 14;
-    font-weight: bold;
-    text-align: center;
-    width: max-content;
-}
-#maincontent{
-    margin-top: 30%;
-    margin bottom:40%
-}
-p.reftopic{font-family: 'Times New Roman', Times, serif;
-    font-size: 14;
-    font-weight: normal;
-    text-align: center;
-    width: max-content;
-}
-#reftitle{font-family: 'Times New Roman', Times, serif;
-    font-size: 14;
-    font-weight: bold;
-    text-align: center;
-    width: max-content;
-}
-#signblock{ margin-top: 30%;
+#bodylist {
+    width: 21cm;
+    height: 32cm;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    margin-left: auto;
     margin-right: auto;
-    margin-left: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    text-align: center;
+}
+#alltext {
+    margin-left: 50mm;
+    margin-right: 25mm;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    text-align: center;
+    margin-top:25mm;
+    margin-bottom:25mm;
+     
+}
+#boldtext {
+    font-weight: bold;}
+#maincontent {
+    margin-top: 50mm;
+}
+#signblock {
+    margin-left: 60mm;
+    margin-right: 15mm;
+    margin-top: 30mm;
+
+}
+p.refsign{
     text-align: left;
 }
+span.underline{
+    text-decoration: underline;
+}
 #pyear{
-    font-family: 'Times New Roman', Times, serif;
-        font-size: 14;
-        text-align: center;
-        margin-left: 40%;
-    margin-right: 40%;
-        margin-top: 40%;
-        width: max-content;
-}
-p.refsign{width: max-content;
-
-}
-p.reftcent{text-align: center;
-
+    margin-top:130mm;
+ 
+  
 }
