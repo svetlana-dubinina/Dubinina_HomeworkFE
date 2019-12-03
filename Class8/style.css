@@ -1,0 +1,47 @@
+#alltext{font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: max-content;}
+#headliner {font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    font-weight: bold;
+    text-align: center;
+    width: max-content;
+}
+#maincontent{
+    margin-top: 30%;
+    margin bottom:40%
+}
+p.reftopic{font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    font-weight: normal;
+    text-align: center;
+    width: max-content;
+}
+#reftitle{font-family: 'Times New Roman', Times, serif;
+    font-size: 14;
+    font-weight: bold;
+    text-align: center;
+    width: max-content;
+}
+#signblock{ margin-top: 30%;
+    margin-right: auto;
+    margin-left: 50%;
+    text-align: left;
+}
+#pyear{
+    font-family: 'Times New Roman', Times, serif;
+        font-size: 14;
+        text-align: center;
+        margin-left: 40%;
+    margin-right: 40%;
+        margin-top: 40%;
+        width: max-content;
+}
+p.refsign{width: max-content;
+
+}
+p.reftcent{text-align: center;
+
+}
