@@ -1,15 +1,19 @@
 #bodylist {
+    position: absolute;
+    display: inline;
+    z-index: 22222;
     width: 21cm;
     height: 32cm;
+    margin-left: auto;
+    margin-right: auto;
     border-style: solid;
     border-color: grey;
     border-width: thin;
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'Times New Roman', Times, serif;
     font-size: 14;
     text-align: center;
-}
+    opacity: 0.85;
+   }
 #alltext {
     margin-left: 50mm;
     margin-right: 25mm;
@@ -42,3 +46,63 @@ span.underline{
  
   
 }
+#loadingwindow {
+    width: 10cm;
+    height: 20px;
+    border: 1px solid #9400D3;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-left: 0;
+    
+    
+  }
+  #loadinginput {
+    width: 72%;
+    height: 20px;
+    border: none;
+    background: #BA55D3;
+    text-align: right;
+    
+  }
+  .letters {
+      margin-right: 20%;
+     }
+     #modalwindow {
+        width: 40%;
+        height: 40%;
+      border: 2px solid #d000da;
+      font-family: Tahoma;
+      font-size: 14pt;
+      box-shadow: 0 0 5px 2px
+      
+            }
+      h1 {
+        text-align: center;
+        
+      }
+      #modalwindowspan {
+                padding: 10%;
+        margin-right: 20px;
+              }
+      .hr {
+    color: #d000da;
+    style: solid;
+    width: 1px;
+              }
+      div.button {
+        margin-bottom: 10%;
+        margin-top: 10%;
+        margin-left: 45%;
+        margin-right: auto;
+        
+      }
+      #popupcontent {
+          position: relative;
+          display: inline;
+          left: 50px;
+          top: 200px;
+          z-index: 99999;
+          opacity: 1;
+             
+      }
+      

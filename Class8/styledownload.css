@@ -1,0 +1,22 @@
+#loadingwindow {
+    width: 10cm;
+    height: 20px;
+    border: 1px solid #9400D3;
+    text-align: right;
+    position: relative;
+    
+  }
+  #loadinginput {
+    width: 72%;
+    height: 20px;
+    border: none;
+    background: #BA55D3;
+    text-align: right;
+    
+  }
+  .letters {
+    display: inline;
+    position: relative;
+    margin-right: 20%;
+     }
+  
