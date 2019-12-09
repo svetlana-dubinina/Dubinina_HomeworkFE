@@ -73,17 +73,7 @@ margin-bottom: 20%
         font-size: 14pt;
         color: navy;
     }
-    .formdelivery1{
-        position:relative;
-        display: inline;
-    }
- #del1map {
-     position:absolute;
-     display: none;
- }
-    .formdelivery1:hover > #delimap{
-        display: inline-block
-    }
+    
 #footerinformation {
     position: static;
     width: 100%;
@@ -121,4 +111,12 @@ margin-bottom: 20%
     text-align: center;
     width:80%;
     height:50%;
+}
+.deli {
+    display:none;
+min-height: 50px;
+padding: 20px 30px;
+}
+input[name="deliv"]:checked + div+div.deli{
+    display: inline-block;
 }

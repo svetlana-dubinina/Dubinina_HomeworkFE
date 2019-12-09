@@ -51,11 +51,15 @@
         <p class="forminputtext">E-mail</p>
         <input type="email" name="client-email" required  placeholder="Ваш актуальный e-mail">
         <p class="forminputtext">Выберите способ доставки</p>
-        <input type="radio" name="client-delivery" value="1"> <span class="formdelivery1">Самовывоз</span></br>
-        <div id="del1map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.600659985325!2d27.548962715859535!3d53.903301480099486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfebe68e0203%3A0x7b59184b5d72f463!2z0YPQu9C40YbQsCDQndC10LzQuNCz0LAgNSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1575760010338!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
-        <div id="del2address"></div>
-        <input type="radio" name="client-delivery" value="2"> <span class="formdelivery2">Доставка курьером</span></br>
-    </div>
+        <label for="deliverytype">
+            <input type="radio" id="dilivery1" name="deliv" value="1">
+           <div>Самовывоз</div><div class="deli"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.600659985325!2d27.548962715859535!3d53.903301480099486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfebe68e0203%3A0x7b59184b5d72f463!2z0YPQu9C40YbQsCDQndC10LzQuNCz0LAgNSwg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1575760010338!5m2!1sru!2sby" width="300" height="300" frameborder="0" style="border:0;"padding="10"></iframe></div>
+        </label></br>
+        <label for="deliverytype">
+            <input type="radio" id="dilivery2" name="deliv" value="2">
+            <div>Доставка курьером</div>
+            <div class="deli"><input type="text" name="addressinput" required placeholder="Адрес доставки"></div>
+        </label>
         </form>
 <div id="footerinformation"><div id="contacts"><p>+37529292929</p><p>+3753333333</p></p></div><div id="address"></br><p id="addr">г.Минск, а/я 256, ул. Волоха, 54</p></div></div>
     </div>
