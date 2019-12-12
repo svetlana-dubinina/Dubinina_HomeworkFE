@@ -1,0 +1,83 @@
+.sky {
+       
+       height: 200px;
+       background: linear-gradient(180deg, #191970, rgb(111, 193, 204));
+       z-index: -1;
+}
+       .sun  {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        margin-left: 50%;
+        border-radius: 50%;
+        background: radial-gradient(circle at 65% 10%, rgb(183, 219, 97), yellow);
+        z-index: 100;
+        }
+        .sea {
+
+            height: 200px;
+            background: linear-gradient(180deg, #3a3ac7, rgb(15, 34, 97));
+            z-index:-1;
+        }
+        .suntrace{
+            height: 200px;
+            z-index: 100;
+            padding: 3px;
+            margin-left: 40%;
+            margin-right:30%;
+            z-index: -0.5;
+            opacity: 50%;
+            
+        }
+        .suntrace>div {
+            height: 3pt;
+            padding: 4px;
+            background-color: white;
+            padding: 3px;
+            z-index: 100;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sntr1 {
+            width: 100px;
+            
+        }
+        .sntr2{
+            width: 80px;
+        }
+        .sntr3{
+            width: 70px;
+        }
+        .sntr4{
+            width: 60px;
+        }
+        .sntr5{
+            width: 50px;
+        }
+        .sntr6{
+            width: 40px;
+        }
+        .sntr7{
+            width: 30px;}
+        .sntr8{
+            width: 20px;}
+
+        .beach {
+            height: 200px;
+            background: linear-gradient(to bottom left, rgb(228, 197, 59), rgb(172, 106, 8));
+            opacity:1;
+            z-index: -1;
+                       }
+        .sand{
+            height: 200px;
+            opacity:1;
+            background: url(shells.png);
+            z-index: 99;
+            opacity: 0.2;
+        }
+                   .shells {
+                       height: 200px;
+                       background
+                       height: 100%;
+                       width: 100%;
+                   }

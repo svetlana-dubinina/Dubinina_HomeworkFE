@@ -1,0 +1,109 @@
+#topheader {
+  width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+ul {
+    text-align: center;
+ list-style: none;
+ 
+  width: 100%;
+  height: 70pt;
+  }
+li {
+   float: left;
+   padding: 5pt;
+  }
+.logo {
+  width: 100%;
+  height: 70pt;
+  
+  
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.phone a{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: purple;
+    margin-top: 30%;
+
+    }
+.phone a:hover{
+    
+    font-style: italic;
+    color: tomato;
+}
+.textarea {
+ 
+    border: 1px solid navy;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 20px;
+  
+}
+.searchpanel:before {
+    background-image:  ;
+}
+.menublock {
+    margin-top: 10%;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+}
+.menuitem {
+  border: solid 1px navy;
+  border-radius: 10px;
+  margin-left: 10px;
+  
+}
+.menuitem a{
+    text-decoration: none;
+
+}
+
+.menuitem:hover {
+    background: turquoise;
+}
+
+.customcheckbox {
+    margin-top: 10%;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+}
+.checkbox {
+    display: none;
+}
+.checkboximg {
+    position:relative;
+    display: block;
+}
+.checkedimg{
+    position:absolute;
+    display: none;
+}
+.checkboximg:active {
+    position: absolute;
+    display: none;
+}
+.checkboximg:active+.checkedimg{
+    display: block;
+position: relative;
+    }
+
+
