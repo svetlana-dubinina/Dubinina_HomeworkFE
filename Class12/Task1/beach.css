@@ -63,21 +63,18 @@
             width: 20px;}
 
         .beach {
-            height: 200px;
+            height: 300px;
             background: linear-gradient(to bottom left, rgb(228, 197, 59), rgb(172, 106, 8));
             opacity:1;
             z-index: -1;
                        }
         .sand{
-            height: 200px;
-            opacity:1;
+            height: 300px;
             background: url(shells.png);
             z-index: 99;
             opacity: 0.2;
         }
                    .shells {
-                       height: 200px;
-                       background
-                       height: 100%;
+                    height: 300px;
                        width: 100%;
                    }

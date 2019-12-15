@@ -1,14 +1,22 @@
-#topheader {
-  width: 100%;
+
+.alltext {
+    width: 100%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 
+
+}
+#topheader {
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 ul {
     text-align: center;
  list-style: none;
- 
   width: 100%;
   height: 70pt;
   }
@@ -40,19 +48,7 @@ li {
     font-style: italic;
     color: tomato;
 }
-.textarea {
- 
-    border: 1px solid navy;
-    border-radius: 10px;
-    height: 50px;
-    width: 300px;
-    margin-left: 10px;
-    margin-right: 20px;
-  
-}
-.searchpanel:before {
-    background-image:  ;
-}
+
 .menublock {
     margin-top: 10%;
     width: 50%;

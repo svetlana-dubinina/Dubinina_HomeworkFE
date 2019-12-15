@@ -8,16 +8,18 @@
     <title>music</title>
 </head>
 <body>
+    <div class="alltext">
 <div id="topheader">
 <ul>
 <li><div class="logo"> <img src="music.png" alt="logoimage"></div></li>
 <li><div class="phone"> <a href="tel:+375295732417">+375295732417</a></div></li>
-<li><div><img src="search.png" alt="search-picture" width=35px heigth=35px></div></li>
-<li><div><form action="" method="get">
-    <input name="search" placeholder="Хочу найти..." type="search">
-    <button type="submit">Поиск</button>
+<li><div><form action="" method="post" class="search">
+	<input type="search" name="sf" placeholder="Хочу найти" class="input" />
+	<input type="submit" name="sf" value="" class="submit" />
+</form>
   </form></div></li>
 </ul>
+</div>
 
 <div class="menublock">
 <ul>
@@ -29,10 +31,12 @@
 </div>
 </div>
 <div class="customcheckbox">
+    
     <div class="chkboximg"><img src="checkbox-unchecked.png" width="20px" height="20px"></div>
     <div class="checkedimg"><img src="checkbox-checked.png" width="20px" height="20px"></div>
     <input type="checkbox" class="checkbox" id="checkbox" />
 <label for="checkbox">Согласен</label>
+</div>
 </div>
 
 </body>
