@@ -1,0 +1,63 @@
+img{
+    width: 70px;
+    height:70px;
+}
+
+.v2 {
+    position: absolute;
+}
+.v3 {
+    top: 45%;
+    left: 44%;
+}
+#vint:hover .v4{animation: 3s ease-in 0.5s normal none infinite running v4;
+    animation-timing-function: steps(9, end);
+    width: 100px;
+   
+    }
+.v2 {
+        position: absolute;
+        transition: all 5s ease-in;
+            }
+img.v4 {
+       
+      }
+      @keyframes v4 {
+        0% {
+          transform: rotate(0deg);
+        }
+        10% {
+            transform: rotate(120deg);
+          }
+        20% {
+            transform: rotate(240deg);
+          }
+        30% {
+          transform: rotate(360deg);
+        }
+        40% {
+            transform: rotate(0deg);
+        
+          }
+        50% {
+            transform: rotate(-240deg);
+        
+          }
+        70%
+        {
+            transform: rotate(-120deg);
+        
+          }
+          70%
+        {
+            transform: rotate(-90deg);
+        
+          }
+       
+        100%
+                  {
+                    transform: rotate(0deg);
+                          }
+
+      }
+     
