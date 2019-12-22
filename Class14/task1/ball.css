@@ -1,42 +1,32 @@
-img {
-    width: 60px;
-    height:60px;
-}
-.b2 {
-    position: absolute;
-    width: 60px;
-}
-.b1 {
+.ball {
+    width: 1000px;
+    height: 200px;
     position: relative;
-    width: 100%;
-}
-.cont {
-   width: 100%;
-  
-}
-.cont:hover .b2{
-    position: relative;
-    animation: move 5s ease-out;
-   }
-   .cont:hover .b1{
-    position: absolute;
-    animation: move 5s ease-out;
-   }
-@keyframes move {
-    from {
-        left: 0%;
-        
-      }
-      25% {
-        left: 20%;
-             }
-      50% {
-        left: 70%;
-              }
-      75% {
-        left: 90%;
-             }
-      to {
-        left: 100%;
-      }
     }
+#ball-move {
+    position: relative;
+
+}
+
+.ball input:not(checked) + label:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url("soccer-ball-png-26384.png") no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+
+    transition: margin-left 3s linear;
+}
+
+.ball input:checked + label:before {
+
+    margin-left: 1000px;
+}
+
+.ball input {
+    display: none;
+}
+
