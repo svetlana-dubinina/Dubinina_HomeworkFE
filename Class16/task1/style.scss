@@ -1,0 +1,37 @@
+body {
+    background: none;
+    color: red;
+}
+$bdc: 1px solid blue;
+$divwidth: 200px;
+$divheight: 100px;
+$bdc2: 2px solid red;
+$bgdc1:yellow;
+$bgdc2: green;
+.d1 {
+    border: $bdc;
+    width: $divwidth;
+    height:$divheight;
+    margin-top: 0;
+    background-color: $bgdc1;
+    &:hover{
+        background-color: $bgdc2;
+    }
+}
+.d1.d2 {
+    margin-top: 100px;
+}
+.d1.d3 {
+    margin-top:300px;
+}
+.d2 {
+    border: $bdc2;
+    width: $divwidth;
+    height:$divheight;
+    margin-top: 10px; 
+    background-color: $bgdc2;
+    &:hover{
+        background-color: $bgdc1;
+    }
+}
+

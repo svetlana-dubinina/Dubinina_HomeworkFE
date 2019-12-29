@@ -1,0 +1,207 @@
+$textcw: white;
+$font: Arial;
+$fontwl: 1000;
+$fontwu:200;
+$bckgri:cover;
+$ab: absolute;
+$rel: relative;
+$fx: fixed;
+$textc:#AFEEEE;
+$r10: 10px;
+$r20: 20px;
+$op05: 0.5;
+$op1:1;
+$f: flex;
+$fdr:row;
+$fdrc: column;
+$fjstbtw: space-between;
+$w90: 90%;
+$mgr10:10%;
+$txtsh: 1 1 2px navy;
+$w80:80%;
+$w40:40%;
+$w30: 30%;
+$mgr5:5%;
+$cent:center;
+
+*{
+    padding: 0;
+    width:100%;
+}
+body{
+    background-image: url(back.jpg);
+    background-size: 100%;
+    width: $w90;
+     
+          }
+.horiz_menu{
+    display:$f;
+    flex-direction: $fdr;
+    align-items: $fjstbtw;
+    font-family: $font;
+    font-size: 18pt;
+    color:$textcw;
+    text-decoration: none;
+    border: 1px solid navy;
+    border-radius: $r10;
+    background-color: $textc;
+    width: $w90;
+    padding-left: $mgr10;
+    padding-right: $mgr10;
+    opacity: 0.95;
+    }
+    .horiz_menu_item {
+        padding: 0;
+    }
+@media (max-width:1000px)  {
+    .horiz_menu{
+    flex-direction: $fdrc;
+    width:$w80;
+    margin-left: $mgr10;
+    margin-right: $mgr10;
+    text-align: $cent;
+    padding:0;
+     }
+}
+a{
+    color:$textcw;
+    font-weight: $fontwl;
+    text-decoration: none;
+    padding-left: $mgr10;
+    opacity: 1;
+    text-shadow: 1px 1px 1px black;
+    &:hover{color:rgb(247, 175, 93);
+        text-shadow:$textcw;
+          
+    }
+     }
+.h1div{
+    color:$textcw;
+    font-weight: $fontwl;
+    padding-top: $mgr10;
+    opacity: 1;
+    text-shadow: 1px 1px 1px black;
+    font-family: $font;
+    text-align: center;
+    font-size:24pt;
+    }
+    .inform, .reviews_ul{
+        display: $f;
+        flex-direction: $fdr;
+        justify-content: $fjstbtw;
+        font-family: $font;
+        align-items: center;
+        padding:$mgr5;
+        opacity: 0.8;
+        height: 200px;
+        &:hover {
+            opacity: 1;
+        }
+       
+    }
+   
+    .text {
+        font-size: 14pt;
+        color:navy;
+        border: 1px solid navy;
+        border-radius: $r10;
+        background-color: $textc;
+        width:$w30;
+        font-weight: $fontwu;
+        padding: $mgr5; 
+        height: 200px;    
+       
+    }
+    .devices{
+        display: $f;
+        flex-direction: $fdr;
+        justify-content: $fjstbtw;
+        flex-wrap: wrap;
+                           }
+   .imgbrands {
+        width:40px;
+        height:40px;
+         }
+     .revcontent {
+         display: $f;
+         flex-direction: $fdrc;
+         justify-content: $fjstbtw;
+      
+     }   
+    .photo,.textrev {
+        width:100px;
+        height:100px;
+        border: solid 6px white; 
+        border-radius: $r10;
+        padding: $mgr5;
+        
+    }
+    .textrev {
+        background-color: $textc;
+        color: navy;
+    }
+  
+    .reviews {
+        padding-top: $mgr10;
+    }
+   
+       footer{
+            display: $f;
+            flex-direction: $fdr;
+            justify-content: $fjstbtw;
+            font-family: $font;
+            align-items: center;
+            padding:$mgr5;
+            opacity: 0.8;
+            height: 200px;
+            background-color: $textc;
+            &:hover {
+                opacity: 1;
+            }
+        }
+            
+        .footer_menu_item{
+            width:100px;
+            height:100px;
+            border: solid 6px white; 
+            border-radius: $r10;
+            padding: $mgr5;
+            background-color: $textc;
+           color: navy;
+           text-align: $cent;
+                
+
+        }
+        @media (max-width:1000px)  {
+            .inform{
+            flex-direction: $fdrc;
+            width:$w80;
+            align-items: $cent;
+            margin-left: auto;
+            margin-right: auto;
+             }
+             .devices {
+                flex-direction: $fdrc;
+             }
+             .text {
+                font-size: 11pt;
+                width:$w90;
+                         }
+             .reviews_ul {
+                flex-direction: $fdrc;
+                padding-top: $mgr10;
+             }
+             .reviews {
+                 margin-top: 20%;
+             }
+             .revcontent {
+                 display: $f;
+                 flex-direction: $fdr;
+                 width: 100%;
+                
+             }
+                         }
+  
+  
+    
+        

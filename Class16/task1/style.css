@@ -1,0 +1,38 @@
+body {
+  background: none;
+  color: red;
+}
+
+.d1 {
+  border: 1px solid blue;
+  width: 200px;
+  height: 100px;
+  margin-top: 0;
+  background-color: yellow;
+}
+
+.d1:hover {
+  background-color: green;
+}
+
+.d1.d2 {
+  margin-top: 100px;
+}
+
+.d1.d3 {
+  margin-top: 300px;
+}
+
+.d2 {
+  border: 2px solid red;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+  background-color: green;
+}
+
+.d2:hover {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
