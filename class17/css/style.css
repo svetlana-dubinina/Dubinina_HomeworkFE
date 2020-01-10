@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.logo {
+  width: 15%; }
+
+.logo img {
+  width: 100%;
+  height: auto; }
+
+header footer body .header-main {
+  width: 100%;
+  padding: 0; }
+
+.headermenu {
+  width: 45%;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding-left: 5%; }
+
+.social_and_search {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-line-pack: right;
+  align-content: right;
+  padding-left: 20%;
+  padding-bottom: 0%; }
+
+.slogan {
+  width: 100%;
+  color: grey;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.social_header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: #242021;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14; }
+
+.svg_header {
+  height: 35%;
+  width: auto; }
+
+.header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: static;
+  padding: 8pt;
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  height: 15%; }
+
+.header_menu_horiz {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  list-style-type: none;
+  margin-bottom: 15pt; }
+  .header_menu_horiz a {
+    color: #242021;
+    text-decoration: none;
+    font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400; }
+    .header_menu_horiz a:hover {
+      color: grey; }
+
+.main_banner {
+  background-image: url(../img/banners/main-banner.jpg);
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+  position: relative; }
+
+.main_banner_teaser {
+  width: 80%;
+  padding: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: right;
+  top: 17%;
+  position: absolute; }
+
+.dwnarr {
+  width: 15px;
+  height: 15px; }
+
+.header_menu_drop {
+  display: none;
+  position: absolute; }
+
+.additional_banners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.additional_banners_name {
+  width: 100%;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #242021;
+  text-align: center;
+  margin-top: 10%; }
+
+.add_banners_img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3vw;
+  margin-top: 5%; }
+
+.add_banner1 {
+  background-image: url(../img/banners/add_banner1.jpg);
+  background-size: cover;
+  height: 400px; }
+
+.add_banner2 {
+  background-image: url(../img/banners/add_banner_2.jpg);
+  background-size: cover;
+  height: 400px; }
+
+.goods_area_listing {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 3vw;
+  margin-top: 5%;
+  padding-left: 10pt;
+  padding-right: 10pt; }
+
+.goods_area_items_img img {
+  width: 100%; }
+
+.goods_area_item_name p {
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700; }
+
+.goods_area_item_desc p {
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal; }
+
+.goods_area_item_price p {
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: red; }
+
+.goods_area_item_quant p {
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  color: grey; }
+
+.product_desc {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.name_origin .goods_area_item_teaser {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 50%; }
+
+.goods_area_item_teaser {
+  padding-left: 8pt; }

@@ -1,0 +1,236 @@
+$fam: "Proxima Nova","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+$cent: center;
+$fl: flex;
+$r: row;
+$col: column;
+$st: static;
+$rel: relative;
+$ab: absolute;
+$no: none;
+$bl: #242021;
+$gre: grey;
+$tsc: #a64311;
+$wh: white;
+$re:red;
+$w100: 100%;
+$h100: 100%;
+$fs18: 18px;
+$fs26: 3em;
+$fsn: normal;
+$fss:bold;
+$fw4:400;
+$fs105: 1.5em;
+$fw7:700;
+$mrgbtm8: 8px;
+$lf: left;
+$rt: right;
+$gr: grid;
+
+*{padding: 0;
+margin: 0;
+}
+.logo{
+    width:15%;
+}
+.logo img{
+    width:100%;
+    height:auto;
+}
+header footer body .header-main {
+    width:$w100;
+    padding:0;
+}
+.headermenu {
+    width: 45%;
+    align-self: flex-end;
+    padding-left: 5%;
+}
+.social_and_search {
+    width:45%;
+    display:$fl;
+    flex-direction:$col;
+    align-content:$rt;
+    padding-left: 20%;
+    padding-bottom:0%;
+}
+.slogan {
+    width:$w100;
+    color:$gre;
+    font-family:$fam;
+        font-size: $fs18;
+        font-weight: 50;
+        display: $fl;
+    flex-direction: $r;
+    justify-content: flex-end;
+        
+
+}
+.social_header {
+    width:$w100;
+    display: $fl;
+    flex-direction: $r;
+    justify-content: flex-end;
+    color:$bl;
+    font-family:$fam;
+        font-size: 14;
+
+    
+
+}
+.svg_header {
+    height:35%;
+    width: auto;
+}
+
+.header-main {
+    display: $fl;
+    flex-direction: $r;
+    justify-content: space-between;
+    align-items: $cent;
+    position: $st;
+    padding:8pt;
+    position: fixed;
+    z-index: 1000;
+    background-color: $wh;
+    height:15%;
+    }
+.header_menu_horiz{
+    display: $fl;
+    flex-direction: $r;
+    justify-content: space-between;
+    align-items: $cent;
+    width: 100%;
+    list-style-type: $no;
+    margin-bottom: 15pt;
+      
+    & a{
+        color:$bl;
+        text-decoration: $no;
+        font-family:$fam;
+        font-size: $fs18;
+        font-weight: $fw4;
+        &:hover {
+            color:$gre;
+        }
+
+    }
+
+}
+.main_banner {
+    background-image: url(../img/banners/main-banner.jpg);
+    width: $w100;
+    height: 800px;
+    background-size: cover;
+    position:$rel;
+    
+}
+.main_banner_teaser{
+    width: 80%;
+    padding:55px;
+    font-size:$fs18;
+    font-weight: $fw7;
+    font-family: $fam;
+    color:$wh;
+    text-align:$rt;
+    top: 17%;
+    position: $ab;
+  
+
+}
+
+.dwnarr{
+width:15px;
+height:15px;
+}
+.header_menu_drop {
+    display:$no;
+    position: $ab;;
+}
+.additional_banners {
+    display: $fl;
+    flex-direction: $col;
+    justify-content: space-between;
+}
+.additional_banners_name {
+    width: $w100;
+    font-family:$fam;
+    font-size: $fs26;
+    font-weight: $fw7;
+    color:$bl;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+.add_banners_img{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3vw;
+    margin-top: 5%;
+}
+.add_banner1 {
+    background-image: url(../img/banners/add_banner1.jpg);
+    background-size: cover;
+    height:400px;
+}
+.add_banner2 {
+    background-image: url(../img/banners/add_banner_2.jpg);
+    background-size: cover;
+    height:400px;
+}
+.goods_area_listing {
+    width: $w100;
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3vw;
+    margin-top: 5%;
+    padding-left: 10pt;
+    padding-right:10pt;
+
+}
+.goods_area_items_img img{
+    width:100%;
+
+}
+.goods_area_item_name p{
+    font-family:$fam;
+    font-size: $fs18;
+    font-weight: $fw7;
+}
+.goods_area_item_desc p {
+    font-family:$fam;
+    font-size: $fs18;
+    font-weight: $fw4;
+    font-style: $fsn;
+   
+}
+
+.goods_area_item_price p {
+    font-family:$fam;
+    font-size: $fs18;
+    font-weight: $fw7;
+    color: $re;
+
+}
+.goods_area_item_quant p{
+    font-family:$fam;
+    font-size: 14pt;
+    font-weight: $fw4;
+    color: $gre;
+}
+.product_desc {
+    width:$w100;
+    display: $fl;
+    flex-direction: $r;
+
+}
+.name_origin .goods_area_item_teaser {
+    display: $fl;
+    flex-direction: $col;
+    flex-wrap: wrap;
+    width:50%;
+}
+.goods_area_item_teaser{
+    padding-left: 8pt;
+}
