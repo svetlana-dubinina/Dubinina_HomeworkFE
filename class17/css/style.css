@@ -570,11 +570,93 @@ ul {
   font-style: normal;
   font-weight: 400; }
 
+.allpage {
+  padding-bottom: 5px; }
+
 .top_margin {
   width: 100%;
   height: 5%; }
 
 .blog_header {
   width: 100%;
-  height: 800px;
-  background-color: #eaf3f9; }
+  height: auto;
+  background-color: #eaf3f9;
+  margin-top: 15%; }
+
+.blog_header_name {
+  margin-bottom: 5%; }
+
+.blog_header > div {
+  margin-left: 5%; }
+
+.blog_item_content_teaser, .blog_header_interview h3 {
+  margin-top: 3%;
+  font-size: 1.25em;
+  letter-spacing: 0.1em; }
+
+.title_content_header, .blog_item_content_title {
+  font-size: 3em;
+  letter-spacing: 0;
+  line-height: 1.1;
+  font-weight: 700; }
+
+.blog_header_name p {
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400; }
+
+.blog_header_photo {
+  background-image: url(../img/previews/profile-preview-claudia.webp);
+  background-size: cover;
+  z-index: 999;
+  width: 90%;
+  height: 900px;
+  -ms-flex-line-pack: center;
+  align-content: center; }
+
+.blog_header_interview_content_text > .about_us_teaser {
+  color: #242021;
+  font-size: 16pt; }
+
+.blog_item_content_desc > .about_us_teaser {
+  color: #242021;
+  font-size: 14pt; }
+
+.blog_header_interview_date, .blog_item_content_date {
+  color: #b3b3b3;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 3%;
+  padding-bottom: 5%; }
+
+.blog_items_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 5%; }
+
+.blog_item {
+  margin-top: 5%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 3%;
+  line-height: 1.5; }
+
+.blog_item_img img {
+  width: 90%;
+  height: auto; }
+
+.blog_item_content_desc {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 2%; }
