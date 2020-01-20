@@ -79,6 +79,7 @@ p {
 .header_menu_drop_content {
     display: $fl;
 }
+
 .header_menu_drop {
     display: none;
 }
@@ -121,16 +122,14 @@ body,
     font-weight: $fw4;
     font-style: normal;
     line-height: 1.5;
-}
+    
+ }
 
 .social_header {
     flex-direction: $r;
-    justify-content: $cent;
+    justify-content: right;
     color: $bl;
     font-size: 14;
-
-
-
 }
 
 .svg_header {
@@ -306,6 +305,26 @@ ul {
 
 .goods_area_items_img img {
     width: 100%;
+    position: relative;
+    display: inline;
+    &:hover {
+        position:absolute;
+        display:none;
+    }
+
+}
+.goods_area_items_img2 {
+    width:100%;
+    height: 100%;
+}
+.goods_area_items_img2 img{
+    width: 100%;
+    position: absolute;
+    display: none;
+    &:hover {
+        position:relative;
+        display:inline;
+    }
 
 }
 
@@ -530,10 +549,11 @@ ul {
     fill: #f4f4f4;
     margin-bottom: -7px;
 }
+
 .wave_wh {
     fill: #eaf3f9;
     margin-top: -30px;
-    transform: scale (-1,1);
+    transform: scale (-1, 1);
     transition: linear;
 
 }
@@ -556,7 +576,7 @@ ul {
     width: 25px;
     height: 25px;
     padding: 8px;
-    }
+}
 
 .small {
     margin-top: 5%;
@@ -618,68 +638,97 @@ ul {
 
 }
 
-.footer_normaltext {
+.footer_normaltext{
     font-family: $fam;
     font-size: 0.83333em;
     line-height: 1.5;
     font-style: normal;
     font-weight: $fw4;
 }
-.allpage{
- padding-bottom: 5px;
+
+.allpage {
+    padding-bottom: 5px;
 }
+
 .top_margin {
     width: $w100;
-    height:5%;
+    height: 5%;
 }
+
 .blog_header {
     width: $w100;
     height: auto;
     background-color: #eaf3f9;
-    margin-top:15%;
- 
+    margin-top: 15%;
+
 }
-.blog_header_name{
-    margin-bottom:5%;
+
+.blog_header_name_art a {
+    text-decoration: none;
+    color: $bl;
 }
-.blog_header>div{
+
+.blog_header_name,
+.blog_header_name_art {
+    margin-bottom: 5%;
+}
+
+.blog_header_name_art p {
+    font-family: $fam;
+    font-size: $fs18;
+    font-style: normal;
+    font-weight: $fw4;
+    padding-top: 50px;
+
+}
+
+.blog_header>div {
     margin-left: 5%;
 }
-.blog_item_content_teaser,.blog_header_interview h3{
+
+.blog_item_content_teaser,
+.blog_header_interview h3 {
     margin-top: 3%;
     font-size: 1.25em;
     letter-spacing: 0.1em;
-        }
-    .title_content_header, .blog_item_content_title{
-        font-size: 3em;
-        letter-spacing: 0;
-        line-height: 1.1;
-        font-weight: $fw7;
-    }
-.blog_header_name p{
+}
+
+.title_content_header,
+.blog_item_content_title {
+    font-size: 3em;
+    letter-spacing: 0;
+    line-height: 1.1;
+    font-weight: $fw7;
+}
+
+.blog_header_name p {
     font-family: $fam;
     font-size: $fs18;
     font-style: normal;
     font-weight: $fw4;
 }
-.blog_header_photo{
-background-image: url(../img/previews/profile-preview-claudia.webp);
-background-size: cover;
-z-index:999;
-width:90%;
-height: 900px;
-align-content: $cent;
+
+.blog_header_photo {
+    background-image: url(../img/previews/profile-preview-claudia.webp);
+    background-size: cover;
+    z-index: 999;
+    width: 90%;
+    height: 900px;
+    align-content: $cent;
 }
 
-.blog_header_interview_content_text>.about_us_teaser{
-    color:$bl;
-    font-size:16pt;
+.blog_header_interview_content_text>.about_us_teaser {
+    color: $bl;
+    font-size: 16pt;
 }
-.blog_item_content_desc>.about_us_teaser{
-    color:$bl;
-    font-size:14pt;
+
+.blog_item_content_desc>.about_us_teaser {
+    color: $bl;
+    font-size: 14pt;
 }
-.blog_header_interview_date, .blog_item_content_date {
+
+.blog_header_interview_date,
+.blog_item_content_date {
     color: #b3b3b3;
     font-weight: $fw4;
     font-style: normal;
@@ -687,25 +736,146 @@ align-content: $cent;
     padding-bottom: 5%;
 
 }
+
 .blog_items_all {
     display: $fl;
     flex-direction: $col;
     margin-top: 10%;
-    margin-left:5%;
+    margin-left: 5%;
 }
+
 .blog_item {
-    margin-top:5%;
+    margin-top: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 3%;
     line-height: 1.5;
 }
-.blog_item_img img { width:90%;
+
+.blog_item_img img {
+    width: 90%;
     height: auto;
 }
-.blog_item_content_desc{
+
+.blog_item_content_desc {
     margin-top: 5%;
     margin-bottom: 5%;
     margin-right: 2%;
+}
+
+.artist_inf {
+    width: $w100;
+    display: $fl;
+    flex-direction: $r;
+    padding-bottom: 50px;
+}
+
+.artist_photo {
+    width: 600px;
+    height: 600px;
+    background-image: url(../img/artists/tattly-artist-tea-leigh-01_720x.jpg);
+    background-size: cover;
+}
+
+.artist_description {
+    display: $fl;
+    flex-direction: $col;
+    margin-left: 3%;
+}
+
+.artist_name h1, .artist_products_title p{
+    font-family: $fam;
+    font-size: 4em;
+    line-height: 1;
+    font-weight: $fw7;
+    padding-bottom: 5%;
+  
+    & dd { font-weight: $fw4;
+        margin-left: 5%;
+        font-family: $fam;
+        font-size: $fs18;
+        line-height: 1,5;
+            font-style:normal;
+        padding-bottom: 5%;
+
+    }
+}
+
+.artist_facts {
+    display: $fl;
+    flex-direction: $col;
+    width: $w100;
+}
+
+.artist_facts dl {
+    width:$w100;
+    display: $fl;
+    flex-direction: $r;
+}
+
+dl p{
+    width: $w100;;
+    font-weight: $fw4;
+    margin-left: 5%;
+    font-family: $fam;
+    font-size: 1em;
+    line-height: 1,5;
+    font-style:normal;
+    padding-bottom: 5%;
+}
+dl dt {
+    font-weight: $fw7;
+}
+.artist_count a, .artist_contacts a{
+    text-decoration: none;
+    color: $bl;
+    &:hover {
+        color: $gre;
+    }
+}
+.artist_bio p{
+    width: 90%;
+    font-weight: $fw4;
+    font-family: $fam;
+    font-size: 1em;
+    line-height: 1,5;
+    font-style:normal;
+    padding-bottom: 5%;  
+    margin-top: 5%;
+    margin-right:5%;
+}
+.wavedecor {
+    margin: 0.3em 0 0.5em 0;
+    padding-top: 0.5em;
+    list-style: none;
+    font-size: 1.25em;
+    background: url(../img/icons/wave.svg) left top no-repeat;
+}
+.wave1{
+    fill: #f4f4f4;
+     margin-bottom: -7px;
+
+}
+.maillink {
+    font-size:1.25em;
+    font-weight:600;
+    line-height: 1.5;
+
+
+}
+.twitterlink{
+    font-size:1.25em;
+    font-weight:$fw4;
+    line-height: 1.5;
+
+}
+.artist_products_title p{
+    font-size: 3em;
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin: 5%;
+}
+.artist_products_title span {
+    color:#8f91c6;
 }
