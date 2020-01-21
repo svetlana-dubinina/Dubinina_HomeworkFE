@@ -244,6 +244,65 @@ ul {
   background-size: cover;
   height: 400px; }
 
+.add_banner1_teaser {
+  width: 50%;
+  height: 200px;
+  margin-top: 10%;
+  margin-left: 10%; }
+
+.add_banner1_teaser_text p {
+  line-height: 1.5;
+  font-size: 1.22222em;
+  color: #242021;
+  font-style: normal;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+.add_banner1_teaser_btn a {
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 18px;
+  color: white;
+  font-style: normal;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 5px;
+  border: 3px solid #242021;
+  background: #242021;
+  width: 140px; }
+  .add_banner1_teaser_btn a:hover {
+    background: #413f3f;
+    border: 3px solid #413f3f; }
+
+.add_banner2_teaser {
+  width: 50%;
+  height: 200px;
+  margin-top: 20%;
+  margin-left: 60%; }
+
+.add_banner2_teaser_text p {
+  line-height: 1.5;
+  font-size: 1.22222em;
+  color: white;
+  font-style: normal;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px; }
+
+.add_banner2_teaser_btn a {
+  text-decoration: none;
+  line-height: 1.5;
+  font-size: 18px;
+  color: #242021;
+  font-style: normal;
+  font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  padding: 5px;
+  border: 3px solid white;
+  background: white;
+  width: 140px; }
+
 .goods_area_listing {
   width: 100%;
   display: -ms-grid;
@@ -264,6 +323,15 @@ ul {
   .goods_area_items_img img:hover {
     position: absolute;
     display: none; }
+
+.goods_area_items_img3 a.rollimg {
+  width: 306px;
+  height: 306px;
+  background: url(../img/products/p2-1.png);
+  background-size: cover;
+  display: block; }
+  .goods_area_items_img3 a.rollimga.rollimg:hover {
+    background: url(../img/products/p2-2.jpg); }
 
 .goods_area_items_img2 {
   width: 100%;
@@ -720,18 +788,20 @@ ul {
   flex-direction: column;
   margin-left: 3%; }
 
-.artist_name h1, .artist_products_title p {
+.artist_name h1,
+.artist_products_title p {
   font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 4em;
   line-height: 1;
   font-weight: 700;
   padding-bottom: 5%; }
-  .artist_name h1 dd, .artist_products_title p dd {
+  .artist_name h1 dd,
+  .artist_products_title p dd {
     font-weight: 400;
     margin-left: 5%;
     font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
-    line-height: 1,5;
+    line-height: 1, 5;
     font-style: normal;
     padding-bottom: 5%; }
 
@@ -761,17 +831,19 @@ dl p {
   margin-left: 5%;
   font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  line-height: 1,5;
+  line-height: 1, 5;
   font-style: normal;
   padding-bottom: 5%; }
 
 dl dt {
   font-weight: 700; }
 
-.artist_count a, .artist_contacts a {
+.artist_count a,
+.artist_contacts a {
   text-decoration: none;
   color: #242021; }
-  .artist_count a:hover, .artist_contacts a:hover {
+  .artist_count a:hover,
+  .artist_contacts a:hover {
     color: grey; }
 
 .artist_bio p {
@@ -779,7 +851,7 @@ dl dt {
   font-weight: 400;
   font-family: "Proxima Nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
-  line-height: 1,5;
+  line-height: 1, 5;
   font-style: normal;
   padding-bottom: 5%;
   margin-top: 5%;
