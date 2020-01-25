@@ -1,0 +1,26 @@
+Task 1
+function fna(a,b,c){
+if (a*a+b*b==c*c) return 'Такой треугольник существует';
+if (a*a+b*b!==c*c) return 'Такого треугольника не существует';
+}
+
+fna (5,5,6)
+
+Task 2
+var str="l"
+function fnr(n){
+return str.repeat( n );
+}
+fnr(5)
+
+Task3
+function fndesks(d,p){
+if (p%d==1) return 'Нужны еще парты';
+if (p%d==1) return 'Парт хватает ровно на всех учеников';
+if (p%d!==1) return 'Парт даже больше, чем нужно';
+
+}
+fndesks(4,5)
+
+Task 7
+
