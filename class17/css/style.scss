@@ -81,6 +81,10 @@ p {
     display: $fl;
 }
 
+.burgermenu_ul {
+    display: none;
+}
+
 .search_header,
 .login_header,
 .cart_header {
@@ -131,8 +135,8 @@ body,
     font-weight: 100;
     font-style: normal;
     line-height: 1.5;
-
 }
+
 
 .social_header p {
     font-family: $fam;
@@ -292,6 +296,13 @@ ul {
     transition: .3s;
 }
 
+.wave_mobile {
+    display: none;
+    width: 10%;
+    height: 5%;
+    margin-top: 20%;
+}
+
 .dwnarr {
     width: 15px;
     height: 15px;
@@ -434,6 +445,15 @@ ul {
         display: none;
     }
 
+    .header_main_wrapper,
+    .header-main {
+        width: $w100;
+    }
+
+    .burgermenu_ul {
+        display: inline;
+    }
+
     .logo {
         width: 90%;
         height: auto;
@@ -445,20 +465,32 @@ ul {
     }
 
     .main_banner_teaser {
-        width:80%;
+        width: 80%;
         margin-top: 70%;
         align-content: $cent;
+        text-align: $cent;
+        margin-left: 20%;
+        margin-right: 50%;
+        display: $fl;
+        flex-direction: $col;
+        padding-bottom: 30%;
     }
 
     .main_banner_teaser_text p {
+        width: 100%;
         color: $bl;
+        text-align: $cent;
+        margin-right: 50%;
     }
 
     .main_banner_teaser_btn {
         background-color: $bl;
         color: $wh;
-    align-self:$cent;
-     
+        align-self: $cent;
+        text-align: $cent;
+        margin-left: 50%;
+        margin-right: 50%;
+
         display: inline-block;
         width: auto;
         text-decoration: none;
@@ -472,72 +504,94 @@ ul {
         letter-spacing: 0.08em;
         white-space: normal;
         font-size: 16px;
-
         transition: .3s;
+
     }
 
+    .wave_mobile {
+        display: inline;
+        margin-left: 35%;
 
-.add_banners_img{
-    width:$w100;
-    padding-top: 50%;
-    display:$fl;
-    flex-direction: $col;
-     
-}
-.add_banner2 {
-    margin-top: 5%;
-}
-.add_banner2_teaser {
-    width: 50%;
-    height: 200px;
-    margin-top: 20%;
-    margin-left: 60%;
-}
-.assort_links {
-    width: $w100;
-    height: 550px;
-    display: $fl;
-    flex-direction: $col;
-    grid-gap: 10px;
-    padding-top: 10%;
-}
-.burgermenu {
-    display: $fl;
-    flex-direction: $col;
-    width: 100%;
-    justify-content: baseline;
-}
+    }
 
-.burgermenu_img {
-    width: 30%;
-    height: auto;
-    margin-right: 0;
-}
+    .additional_banners {
+        padding-top: 50%;
+    }
 
-.burger_menu_vert {
-    padding-top: 20%;
+    .add_banners_img {
+        width: $w100;
+        padding-top: 20%;
+        display: $fl;
+        flex-direction: $col;
 
-}
+    }
 
-.burger_menu_li a {
-    text-decoration: none;
-    color: $bl;
-    font-size: $fs18;
-    font-weight: $fw4;
-    letter-spacing: 1px;
-    font-family: $fam;
-    line-height: 1.5em;
+    .add_banner1_teaser,
+    .add_banner2_teaser {
+        display: $fl;
+        flex-direction: $col;
+        justify-items: center;
+        width: 80%;
 
-}
+    }
 
-.burger_menu_li {
-    margin: 2em auto 2em 2em;
+    .add_banner2 {
+        margin-top: 5%;
+    }
 
-}
+    .add_banner2_teaser {
+        width: 50%;
+        height: 200px;
+        margin-top: 20%;
+        margin-left: 60%;
+    }
 
-hr {
-    border-bottom: 2px solid $bl;
-}
+    .assort_links {
+        width: $w100;
+        height: 550px;
+        display: $fl;
+        flex-direction: $col;
+        grid-gap: 10px;
+        padding-top: 10%;
+    }
+
+    .burgermenu {
+        display: $fl;
+        flex-direction: $col;
+        width: 100%;
+        justify-content: baseline;
+    }
+
+    .burgermenu_img {
+        width: 30%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .burger_menu_vert {
+        padding-top: 20%;
+
+    }
+
+    .burger_menu_li a {
+        text-decoration: none;
+        color: $bl;
+        font-size: $fs18;
+        font-weight: $fw4;
+        letter-spacing: 1px;
+        font-family: $fam;
+        line-height: 1.5em;
+
+    }
+
+    .burger_menu_li {
+        margin: 2em auto 2em 2em;
+
+    }
+
+    hr {
+        border-bottom: 2px solid $bl;
+    }
 
 }
 
@@ -545,11 +599,10 @@ hr {
     width: $w100;
     display: grid;
     grid-template-rows: 2fr 2fr 2fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-gap: 3vw;
-    margin-top: 5%;
-    padding-left: 10pt;
-    padding-right: 10pt;
+    margin: 5% 10pt 5% 10pt;
+
 
 }
 
@@ -565,34 +618,65 @@ hr {
 
 }
 
-.goods_area_items_img3 a.rollimg {
+.goods_area_items_img1 a.rollimg {
     width: 306px;
     height: 306px;
     background: url(../img/products/p2-1.png);
     background-size: cover;
     display: block;
 
-    &a.rollimg:hover {
+    &:hover {
+        width: 306px;
+        height: 306px;
         background: url(../img/products/p2-2.jpg);
+        background-size: cover;
+        display: block;
     }
 }
 
-.goods_area_items_img2 {
-    width: 100%;
-    height: 100%;
-}
-
-.goods_area_items_img2 img {
-    width: 100%;
-    position: absolute;
-    display: none;
+.goods_area_items_img2 a.rollimg {
+    width: 306px;
+    height: 306px;
+    background: url(../img/products/p3-1.png);
+    background-size: cover;
+    display: block;
 
     &:hover {
-        position: relative;
-        display: inline;
+        background: url(../img/products/p3-2.jpg);
+        background-size: cover;
+        display: block;
     }
-
 }
+
+.goods_area_items_img3 a.rollimg {
+    width: 306px;
+    height: 306px;
+    background: url(../img/products/p4-1.png);
+    background-size: cover;
+    display: block;
+
+    &:hover {
+        background: url(../img/products/p4-2.jpg);
+        background-size: cover;
+        display: block;
+
+    }
+}
+
+.goods_area_items_img4 a.rollimg {
+    width: 306px;
+    height: 306px;
+    background: url(../img/products/p5-1.png);
+    background-size: cover;
+    display: block;
+
+    &:hover {
+        background: url(../img/products/p5-2.jpg);
+        background-size: cover;
+        display: block;
+    }
+}
+
 
 .goods_area_item_name p {
     font-family: $fam;
@@ -668,8 +752,6 @@ hr {
     flex-direction: $r;
     text-align: left;
     top: 100%;
-
-
 }
 
 .sign_up_teaser_text {
@@ -776,6 +858,20 @@ hr {
         height: 40%;
     }
 
+    .goods_area_items_img1 a.rollimg,
+    .goods_area_items_img2 a.rollimg,
+    .goods_area_items_img3 a.rollimg,
+    .goods_area_items_img4 a.rollimg {
+        width: 245px;
+        height: 245px;
+
+        &:hover {
+            width: 245px;
+            height: 245px;
+        }
+    }
+
+
 }
 
 @media screen and (max-width: 500px) {
@@ -789,6 +885,64 @@ hr {
         padding-top: 20%;
         height: 40%;
     }
+
+    .goods_area_listing {
+        width: $w100;
+        display: grid;
+        grid-template-rows: repeat (8, 2fr);
+        grid-template-columns: 50% 50%;
+        grid-gap: 3vw;
+        margin: 5% 10pt 5% 10pt;
+
+
+    }
+
+    .sign_up_teaser {
+        width: $w100;
+        height: auto;
+        display: $fl;
+        flex-direction: column-reverse;
+        text-align: left;
+        top: 100%;
+    }
+
+    .sign_up_teaser_text {
+        width: $w100;
+        height: 50%;
+        margin-left: 3%;
+        margin-top: 10%;
+    }
+
+    .sign_up_teaser_image {
+        width: 80%;
+        height: 500px;
+        background-image: url(../img/banners/add_banner_3.jpg);
+        background-size: cover;
+        margin: 10% 5% 10% 5%;
+    }
+
+    .subscribe_banner {
+        display: none;
+    }
+
+    .assort_links {
+        width: $w100;
+        height: 900px;
+        display: grid;
+        grid-template-columns: 3fr;
+        grid-template-rows: 4fr 4fr 4fr;
+        grid-gap: 20px;
+        padding-top: 10%;
+    }
+
+    .about_us_items {
+        width: $w100;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100% 100%;
+    }
+
 
 }
 
@@ -831,21 +985,18 @@ hr {
     flex-direction: $col;
 }
 
+.about_us_item img {
+    width: 100%;
+    height: auto;
+}
+
 .about-us_desc p {
     text-align: $cent;
     font-weight: 50;
     margin: 8px;
 }
 
-@media screen and (max-width: 900px) {
-    .about_us_item img {
-        width: 100%;
-        height: auto;
-    }
 
-}
-
-@media screen and (max-width: 500px) {}
 
 .footer_all {
     width: $w100;
@@ -868,13 +1019,16 @@ hr {
     fill: #f4f4f4;
     margin-bottom: -7px;
 }
+.wave1 {
+    fill: #f4f4f4;
+    margin-bottom: -7px;
+}
 
 .wave_wh {
     fill: #eaf3f9;
     margin-top: -30px;
     transform: scale (-1, 1);
     transition: linear;
-
 }
 
 .social-icons {
@@ -965,250 +1119,315 @@ hr {
     font-weight: $fw4;
 }
 
-.allpage {
-    padding-bottom: 5px;
-}
+@media screen and (max-width: 500px) {
+    .footer_all {
+        width: $w100;
+        height: 25%;
+        background-color: #f4f4f4;
+    }
 
-.top_margin {
-    width: $w100;
-    height: 5%;
-}
+    .footer_all_grid {
+        width: $w100;
+        display: grid;
+        grid-template-rows: repeat (5, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: 5%;
+        list-style-type: $no;
+        line-height: 1.2em;
+        align-content: $cent;
+        margin: 5%
+    }
 
-.blog_header {
-    width: $w100;
-    height: auto;
-    background-color: #eaf3f9;
-    margin-top: 15%;
+    .footer_social {
+        padding: 0 10% 20% 10%;
+    }
 
-}
 
-.blog_header_name_art a {
-    text-decoration: none;
-    color: $bl;
-}
+    .allpage {
+        padding-bottom: 5px;
+    }
 
-.blog_header_name,
-.blog_header_name_art {
-    margin-bottom: 5%;
-}
+    .top_margin {
+        width: $w100;
+        height: 5%;
+    }
 
-.blog_header_name_art p {
-    font-family: $fam;
-    font-size: $fs18;
-    font-style: normal;
-    font-weight: $fw4;
-    padding-top: 50px;
+    .blog_header {
+        width: $w100;
+        height: auto;
+        background-color: #eaf3f9;
+        margin-top: 15%;
 
-}
+    }
 
-.blog_header>div {
-    margin-left: 5%;
-}
+    .blog_header_name_art a {
+        text-decoration: none;
+        color: $bl;
+    }
 
-.blog_item_content_teaser,
-.blog_header_interview h3 {
-    margin-top: 3%;
-    font-size: 1.25em;
-    letter-spacing: 0.1em;
-}
+    .blog_header_name,
+    .blog_header_name_art {
+        margin-bottom: 5%;
+    }
 
-.title_content_header,
-.blog_item_content_title {
-    font-size: 3em;
-    letter-spacing: 0;
-    line-height: 1.1;
-    font-weight: $fw7;
-}
-
-.blog_header_name p {
-    font-family: $fam;
-    font-size: $fs18;
-    font-style: normal;
-    font-weight: $fw4;
-}
-
-.blog_header_photo {
-    background-image: url(../img/previews/profile-preview-claudia.webp);
-    background-size: cover;
-    z-index: 999;
-    width: 90%;
-    height: 900px;
-    align-content: $cent;
-}
-
-.blog_header_interview_content_text>.about_us_teaser {
-    color: $bl;
-    font-size: 16pt;
-}
-
-.blog_item_content_desc>.about_us_teaser {
-    color: $bl;
-    font-size: 14pt;
-}
-
-.blog_header_interview_date,
-.blog_item_content_date {
-    color: #b3b3b3;
-    font-weight: $fw4;
-    font-style: normal;
-    margin-top: 3%;
-    padding-bottom: 5%;
-
-}
-
-.blog_items_all {
-    display: $fl;
-    flex-direction: $col;
-    margin-top: 10%;
-    margin-left: 5%;
-}
-
-.blog_item {
-    margin-top: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 3%;
-    line-height: 1.5;
-}
-
-.blog_item_img img {
-    width: 90%;
-    height: auto;
-}
-
-.blog_item_content_desc {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 2%;
-}
-
-.artist_inf {
-    width: $w100;
-    display: $fl;
-    flex-direction: $r;
-    padding-bottom: 50px;
-}
-
-.artist_photo {
-    width: 600px;
-    height: 600px;
-    background-image: url(../img/artists/tattly-artist-tea-leigh-01_720x.jpg);
-    background-size: cover;
-}
-
-.artist_description {
-    display: $fl;
-    flex-direction: $col;
-    margin-left: 3%;
-}
-
-.artist_name h1,
-.artist_products_title p {
-    font-family: $fam;
-    font-size: 4em;
-    line-height: 1;
-    font-weight: $fw7;
-    padding-bottom: 5%;
-
-    & dd {
-        font-weight: $fw4;
-        margin-left: 5%;
+    .blog_header_name_art p {
         font-family: $fam;
         font-size: $fs18;
-        line-height: 1, 5;
         font-style: normal;
+        font-weight: $fw4;
+        padding-top: 50px;
+
+    }
+
+    .blog_header>div {
+        margin-left: 5%;
+    }
+
+    .blog_item_content_teaser,
+    .blog_header_interview h3 {
+        margin-top: 3%;
+        font-size: 1.25em;
+        letter-spacing: 0.1em;
+    }
+
+    .title_content_header,
+    .blog_item_content_title {
+        font-size: 3em;
+        letter-spacing: 0;
+        line-height: 1.1;
+        font-weight: $fw7;
+    }
+
+    .blog_header_name p {
+        font-family: $fam;
+        font-size: $fs18;
+        font-style: normal;
+        font-weight: $fw4;
+    }
+
+    .blog_header_photo {
+        background-image: url(../img/previews/profile-preview-claudia.webp);
+        background-size: cover;
+        z-index: 999;
+        width: 90%;
+        height: 900px;
+        align-content: $cent;
+    }
+
+    .blog_header_interview_content_text>.about_us_teaser {
+        color: $bl;
+        font-size: 16pt;
+    }
+
+    .blog_item_content_desc>.about_us_teaser {
+        color: $bl;
+        font-size: 14pt;
+    }
+
+    .blog_header_interview_date,
+    .blog_item_content_date {
+        color: #b3b3b3;
+        font-weight: $fw4;
+        font-style: normal;
+        margin-top: 3%;
         padding-bottom: 5%;
 
     }
-}
 
-.artist_facts {
-    display: $fl;
-    flex-direction: $col;
-    width: $w100;
-}
-
-.artist_facts dl {
-    width: $w100;
-    display: $fl;
-    flex-direction: $r;
-}
-
-dl p {
-    width: $w100;
-    ;
-    font-weight: $fw4;
-    margin-left: 5%;
-    font-family: $fam;
-    font-size: 1em;
-    line-height: 1, 5;
-    font-style: normal;
-    padding-bottom: 5%;
-}
-
-dl dt {
-    font-weight: $fw7;
-}
-
-.artist_count a,
-.artist_contacts a {
-    text-decoration: none;
-    color: $bl;
-
-    &:hover {
-        color: $gre;
+    .blog_items_all {
+        display: $fl;
+        flex-direction: $col;
+        margin-top: 10%;
+        margin-left: 5%;
     }
-}
 
-.artist_bio p {
-    width: 90%;
-    font-weight: $fw4;
-    font-family: $fam;
-    font-size: 1em;
-    line-height: 1, 5;
-    font-style: normal;
-    padding-bottom: 5%;
-    margin-top: 5%;
-    margin-right: 5%;
-}
+    .blog_item {
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 3%;
+        line-height: 1.5;
+    }
 
-.wavedecor {
-    margin: 0.3em 0 0.5em 0;
-    padding-top: 0.5em;
-    list-style: none;
-    font-size: 1.25em;
-    background: url(../img/icons/wave.svg) left top no-repeat;
-}
+    .blog_item_img img {
+        width: 90%;
+        height: auto;
+    }
 
-.wave1 {
-    fill: #f4f4f4;
-    margin-bottom: -7px;
+    .blog_item_content_desc {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 2%;
+    }
 
-}
+    .artist_inf {
+        width: $w100;
+        display: $fl;
+        flex-direction: $r;
+        padding-bottom: 50px;
+    }
 
-.maillink {
-    font-size: 1.25em;
-    font-weight: 600;
-    line-height: 1.5;
+    .artist_photo {
+        width: 600px;
+        height: 600px;
+        background-image: url(../img/artists/tattly-artist-tea-leigh-01_720x.jpg);
+        background-size: cover;
+    }
+
+    .artist_description {
+        display: $fl;
+        flex-direction: $col;
+        margin-left: 3%;
+    }
+
+    .artist_name h1,
+    .artist_products_title p {
+        font-family: $fam;
+        font-size: 4em;
+        line-height: 1;
+        font-weight: $fw7;
+        padding-bottom: 5%;
+
+        & dd {
+            font-weight: $fw4;
+            margin-left: 5%;
+            font-family: $fam;
+            font-size: $fs18;
+            line-height: 1, 5;
+            font-style: normal;
+            padding-bottom: 5%;
+
+        }
+    }
+
+    .artist_facts {
+        display: $fl;
+        flex-direction: $col;
+        width: $w100;
+    }
+
+    .artist_facts dl {
+        width: $w100;
+        display: $fl;
+        flex-direction: $r;
+    }
+
+    dl p {
+        width: $w100;
+        ;
+        font-weight: $fw4;
+        margin-left: 5%;
+        font-family: $fam;
+        font-size: 1em;
+        line-height: 1, 5;
+        font-style: normal;
+        padding-bottom: 5%;
+    }
+
+    dl dt {
+        font-weight: $fw7;
+    }
+
+    .artist_count a,
+    .artist_contacts a {
+        text-decoration: none;
+        color: $bl;
+
+        &:hover {
+            color: $gre;
+        }
+    }
+
+    .artist_bio p {
+        width: 90%;
+        font-weight: $fw4;
+        font-family: $fam;
+        font-size: 1em;
+        line-height: 1, 5;
+        font-style: normal;
+        padding-bottom: 5%;
+        margin-top: 5%;
+        margin-right: 5%;
+    }
+
+    .wavedecor {
+        margin: 0.3em 0 0.5em 0;
+        padding-top: 0.5em;
+        list-style: none;
+        font-size: 1.25em;
+        background: url(../img/icons/wave.svg) left top no-repeat;
+    }
+
+    .wave1 {
+        fill: #f4f4f4;
+        margin-bottom: -7px;
+    }
+
+    #contacts svg {
+        fill: #f4f4f4;
+        margin-bottom: -7px;
+
+    }
+
+    .maillink {
+        font-size: 1.25em;
+        font-weight: 600;
+        line-height: 1.5;
 
 
-}
+    }
 
-.twitterlink {
-    font-size: 1.25em;
-    font-weight: $fw4;
-    line-height: 1.5;
+    .twitterlink {
+        font-size: 1.25em;
+        font-weight: $fw4;
+        line-height: 1.5;
 
-}
+    }
 
-.artist_products_title p {
-    font-size: 3em;
-    line-height: 1.1;
-    letter-spacing: 0;
-    margin: 5%;
-}
+    .artist_products_title p {
+        font-size: 3em;
+        line-height: 1.1;
+        letter-spacing: 0;
+        margin: 5%;
+    }
 
-.artist_products_title span {
-    color: #8f91c6;
+    .artist_products_title span {
+        color: #8f91c6;
+    }
+
+    @media screen and (max-width: 500px) {
+        .wave_wh {
+            fill: #eaf3f9;
+            margin-top: -50px;
+            transform: scale (-1, 1);
+            transition: linear;
+        }
+
+        .blog_header_image img {
+            display: none;
+            background-image: url(../img/previews/profile-preview-claudia.webp);
+            background-size: clip;
+        }
+
+        .artist_inf {
+            width: $w100;
+            display: $fl;
+            flex-direction: $col;
+            padding-bottom: 50px;
+        }
+
+        .artist_photo {
+            width: 80%;
+            height: 300px;
+            background-image: url(../img/artists/tattly-artist-tea-leigh-01_720x.jpg);
+            background-size: cover;
+        }
+
+        .artist_description {
+            display: $fl;
+            flex-direction: $col;
+            margin-left: 3%;
+        }
+    }
 }
