@@ -1124,6 +1124,8 @@ ul {
         width: $w100;
         height: 25%;
         background-color: #f4f4f4;
+        padding-top:0;
+        margin-top: 0;
     }
 
     .footer_all_grid {
@@ -1307,6 +1309,13 @@ ul {
         flex-direction: $col;
         width: $w100;
     }
+    .wave_wh {
+        fill: #eaf3f9;
+        margin-top: 0px;
+        transform: scale (-1, 1);
+        transition: linear;
+        height: 25px;
+    }
 
     .artist_facts dl {
         width: $w100;
@@ -1402,7 +1411,14 @@ ul {
             margin-top: -50px;
             transform: scale (-1, 1);
             transition: linear;
-        }
+                   }
+                   .wave1 {
+                    fill: #f4f4f4;
+                    margin-bottom: -20px;
+                    height: 20px;
+                    padding:0;
+                }
+
 
         .blog_header_image img {
             display: none;
