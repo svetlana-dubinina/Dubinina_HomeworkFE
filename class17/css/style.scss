@@ -155,7 +155,7 @@ body,
     font-size: 14;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 940px) {
 
     .headermenu,
     .header_menu_horiz {
@@ -431,7 +431,7 @@ ul {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 940px) {
     .add_banner2_teaser {
         width: 30%;
         height: 100px;
@@ -440,7 +440,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
 
     .headermenu,
     .slogan,
@@ -851,7 +851,7 @@ ul {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 940px) {
     .subscribe_banner_teaser_btn {
         width: 80%;
     }
@@ -879,7 +879,7 @@ ul {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
     .subscribe_banner_teaser_btn {
         width: 80%;
     }
@@ -1143,7 +1143,7 @@ ul {
     font-weight: $fw4;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
     .footer_all {
         width: $w100;
         height: 25%;
@@ -1462,7 +1462,7 @@ ul {
         align-content: $cent;
     }
 }
-@media screen and (min-width: 500px){
+@media screen and (max-width: 540px){
 .blog_header_photo {
     background-image: url(../img/previews/profile-preview-claudia.webp);
     background-size: cover;
@@ -1472,7 +1472,7 @@ ul {
     align-content: $cent;
 }
 }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 540px) {
         .wave_wh {
             fill: #eaf3f9;
             margin-top: -50px;

@@ -22,5 +22,36 @@ if (p%d!==1) return 'Парт даже больше, чем нужно';
 }
 fndesks(4,5)
 
-Task 7
+Task 4
 
+function fngrade(g){
+
+
+if (g!==i) return 'Введите число от 1 до 10';
+
+if (i==1) return "Материал не усвоен";
+
+if (i==2) return "Плохо";
+
+if (i==3) return "Почти удовлетворительно";
+
+if (i==4) return "Удовлетворительно";
+
+if (i==5) return "Почти хорошо";
+
+if (i==6) return "Хорошо";
+
+if (i==7) return "Очень хорошо";
+
+if (i==8) return "Почти отлично";
+
+if (i==9) return "Отлично";
+
+if (i==10) return "Великолепно";
+
+
+}
+
+fngrade(11)
+
+Task 5
